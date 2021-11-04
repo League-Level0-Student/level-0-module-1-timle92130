@@ -15,8 +15,19 @@ import javax.swing.JOptionPane;
  */
 
 public class SecretMessageBox {
-
-	// 0. Make a main method and put steps 1-5 inside it
+public static void main(String[] args) {
+	String password = "Coding";
+	String message = JOptionPane.showInputDialog("Type your secret message?");
+	String answer = JOptionPane.showInputDialog("Type in the password?");
+	if (answer.equalsIgnoreCase("Coding")){
+		System.out.println(message);
+	}
+		else {
+			JOptionPane.showMessageDialog(null,"Intruder");
+		}
+		
+	
+}
 	
 	// 1. Set a password in a String variable
 	

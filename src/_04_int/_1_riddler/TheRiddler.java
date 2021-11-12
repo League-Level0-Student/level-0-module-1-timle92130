@@ -1,4 +1,7 @@
 package _04_int._1_riddler;
+
+import javax.swing.JOptionPane;
+
 //    Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
@@ -8,18 +11,41 @@ public class TheRiddler {
 
 	public static void main(String[] args) {
 
-		// 1. Make a variable to hold the score
+	int score=0; 
 
-		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
+		String riddle = JOptionPane.showInputDialog("What travels around the world, yet still stays in one corner? ");
 
-		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-
-		// 5. Otherwise, say "wrong" and tell them the answer
-
-		// 6. Add some more riddles
-
-		// 2. Make a pop up to show the score.
+		if (riddle.equalsIgnoreCase("A stamp")) {
+			System.out.println("Correct!");
+			score +=1;
+		}
+		else {
+			System.out.println("Incorrect!");
+			System.out.println("The correct answer is a stamp.");
+		}
+		System.out.println(score);
 		
-	}
+		
+		
+	
+
+		String riddle2 = JOptionPane.showInputDialog("If there are three kids in a family, and Seth has 2 siblings Friday and Saturday who is the third kid in the family.");
+		
+		if (riddle.equalsIgnoreCase("Seth")) {
+			System.out.println("Correct!");
+			score +=1;
+		}
+		else {
+			System.out.println("Incorrect!");
+			System.out.println("The correct answer is Seth.");
+		}
+		System.out.println(score);
+		
+		
+		
+		}
+		
+		
 }
+
 

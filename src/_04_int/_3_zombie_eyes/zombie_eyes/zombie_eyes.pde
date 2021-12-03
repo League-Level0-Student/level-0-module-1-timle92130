@@ -12,12 +12,11 @@ ellipse(208, 130,110,90);
 ellipse(312, 135,90,70);
 }
 if(mouseX<=340){
-fill(#23FA08);
 ellipse(208, 130,110,90);
 ellipse(312, 135,90,70);
 }
 if(mouseX<=500){
-fill(#0A08FA);
+fill(mouseX,mouseY,mouseX);
 ellipse(208, 130,110,90);
 ellipse(312, 135,90,70);
 }
